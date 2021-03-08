@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="wolf-logo.png" alt="wolf-howl-logo">
+            </div>
+            <div class="webname">
+                <p >CODIFIER</p>
+            </div>
+        </nav>
+        <div>
+            <div class="page-header">
+                <h1 class="page-title">Build your very first REST API with Express.js, Node.js & MongoDB</h1>
+            </div>
+            <div>
+                <div>
+                    <h3 class="ques">What is an API?</h3>
+                    <div class="explanation">
+                        <p>API stands for Application Programming Interface, it helps the user to communicate with the server by sending and receiving data in the form of request and response. The API when connected to the database, it must be fetched in order to get all the data from the database. The user can add data to the database using the POST request and request data from the database using the GET request.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="ques">How to build a RESTful or REST API?</h3>
+                    <div class="explanation">
+                        <p>The term REST stands for "Representational State Transfer". REST API is created in order to interact with the server in the user oriented manner. A REST API must be able to perform create, read, update, delete operations with response to the database server </p>
+                    </div>
+                </div>
+                <div>
+                    <section class="nodejs">
+                        <div class="heading">
+                            <h3>Node.js</h3>
+                        </div>
+                        <div class="wrapper">
+                            <div class="content">
+                                <p>Node.js is an open source platform which helps the user to create web related resources by providing various utilities. Node.js plays an important role in building the API, as it has the ability to unite all the necessary tools and make them function as the code written.</p>
+                            </div>
+                            <div class="example">
+                                <code>$ npm init -y</code>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section class="express">
+                    <div class="heading">
+                        <h3>Express</h3>
+                    </div>
+                    <div class="wrapper">
+                        <div class="content">
+                            <p>Express.js is a javascript backend web application framework which is an open source to create a server. Express helps the user to create and run the server in just 3 to 4 steps, but make sure they run on the right port in the localhost. They require the routes to perform the necessary operation, its because routes provide the request to get, post, update, patch, etc.</p>
+                        </div>
+                        <div class="example">
+                            <code>$ npm install express</code>
+                        </div>
+                    </div>
+                </section>
+                <div>
+                    <section class="mongoose">
+                        <div class="heading">
+                            <h3>MongoDB</h3>
+                        </div>
+                        <div class="wrapper">
+                            <div class="content">
+                                <p>Mongo DB is the database section where all the data are stored, retrieved, modified and removed. When connected to the application, the express routes helps in requesting the mongo server to perform tasks with the help of data.</p>
+                            </div>
+                            <div class="example">
+                                <code>$ npm install mongoose</code>
+                            </div>
+                        </div>
+                    </section>
+                    <div>
+                        <section class="dotenv">
+                            <div class="heading">
+                                <h3>Dotenv</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content">
+                                    <p>Dotenv helps the user to hide his username and password and all others identity and we can require them indirectly without naming them.</p>
+                                </div>
+                                <div class="example">
+                                    <code>$ npm install dotenv</code>
+                                </div>
+                            </div>
+                        </section>    
+                    </div>
+                    <div>
+                        <section class="cors">
+                            <div class="heading">
+                                <h3>Cors</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content">
+                                    <p>Cors represents "Cross Origin Resource Sharing" which helps the server to communicate with other port. Just declaring and calling them manages everything.</p>
+                                </div>
+                                <div class="example">
+                                    <code>$ npm install cors</code>
+                                </div>
+                            </div>
+                        </section>    
+                    </div>
+                    <div>
+                        <section class="body-parser">
+                            <div class="heading">
+                                <h3>Body-Parser</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content">
+                                    <p>Body-parser is a tool which converts the set of information into json file so that the data can be stored and retrieved in json format.</p>
+                                </div>
+                                <div class="example">
+                                    <code>$ npm install body-parser</code>
+                                </div>
+                            </div>
+                        </section>    
+                    </div>
+                    <div>
+                        <section class="nodemon">
+                            <div class="heading">
+                                <h3>Nodemon</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content">
+                                    <p>Nodemon is an amazing tool which restarts the browser after finding changes in the code in order to represent the present code.</p>
+                                </div>
+                                <div class="example">
+                                    <code>$ npm install nodemon</code>
+                                </div>
+                            </div>
+                        </section>   
+                    </div>
+                    <div>
+                        <section>
+                            <div class="heading">
+                                <h3>File Setup</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content">
+                                    <p>After following all the steps above there exists a file called package.json. Open package.json and add the following command to make the node.js to run the file by itself. Then create a file and name it as server.js.</p>
+                                </div>
+                                <div class="example">
+                                    <pre>"scripts":</pre>
+                                    <pre>{"start":"nodemon server.js"}</pre>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <div class="heading">
+                                <h3>Setting up the server</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="lecture">
+                                    <p>All the tools installed plays an important role in setting up the server, so make sure you import them correctly. Also call the functions with the proper name as well. Here you can include dotenv file by naming it as .env and inside it you can create a variable and add your mongoDB url with username and password as given below. Please make sure you copy the url from the mongoDB connect and give the right username and password.
+                                        <div class="inner-code">
+                                        <code>CONNECT_DB = mongodb+srv://USERNAME:PASSWORD@cluster0.kffjo.mongodb.net/< dbname>?retryWrites=true&w=majority</code>
+                                    </div>
+                                     After all include them in your server.js file.
+                                    While connecting with mongoDB user the given variable name to connect the Database. To make sure that the server is up and running we can simply create a get route and check them.
+                                    <div class="inner-code" style="margin-top: 10px;">
+                                        <code class="comments"><br>//Create a PORT</br></code>
+                                        <code>const PORT = 5000;</code>
+                                        <code><br>app.get('/', (req,res)=>{</br></code>
+                                        <code>    console.log("Server is up and running")</code>
+                                        <code><br>});</br></code>
+                                    </div> 
+                                    When you start the server and if you see this message in console, it means you are doing well.
+                                    </p>
+                                </div>
+                                <div class="code-variation">
+                                    <div class="codes">
+                                        <code><br>const express = require('express');</br></code>
+                                        <code>const mongoose = require('mongoose');</code>
+                                        <code><br>const bodyParser = require('body-parser');</br></code>
+                                        <code class="comments">//Include dotenv config file as of here</code>
+                                        <code><br>require('dotenv').config();</br></code>
+                                        <code>const cors = require('cors');</code>
+                                        <code class="comments"><br>//Call the express using the name app </br></code>
+                                        <code>const app = express();</code>
+                                        <code class="comments"><br>//app.use is a middleware </br></code>
+                                        <code>app.use(cors());</code>
+                                        <code><br>app.use(bodyParser.json());</br></code>
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments"><br>//Import Routes to the server</br></code>
+                                        <code>const postsRoute = require('./routes/posts');</code>
+                                        <code class="comments"><br>//Assign routes to their directory</br></code>
+                                        <code>app.use('/posts', postsRoute);</code>
+                                        <code><br>app.get('/',(req,res)=>{</br></code>      
+                                        <code>    res.send('we are successfully on home');</code>      
+                                        <code><br>})</br></code>      
+                                    </div>
+                                    <div class="codes" >
+                                        <code class="comments">//Connect mongoDB to server</code>
+                                        <code><br>mongoose.connect(process.env.CONNECT_DB,{ useNewUrlParser: true },() => console.log('Connected to DB'));</br></code>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <div class="heading">
+                                <h3>Create the MODEL</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="lecture">
+                                    <p>Create a new file and name it as Models.js and then lets begin creating the model for the database. To store the data in the database there must be a format or a syntax which helps the user to store and retrieve data in a easy manner. The model must be created in a specific format, and that format is applicable for all the routes.
+                                    </p>
+                                    <p>
+                                        The routes themselves grab the format when assigned to them and the user can make their own way of routes based on this.
+                                    </p>
+                                    <p>
+                                        All the models must consist of the datatype and the right name and must be exported properly. In case if there is a mistake in the database storage structure it occurs only from the models component. So make sure you create them properly and export them. 
+                                    </p>
+                                </div>
+                                <div class="code-variation">
+                                    <div class="codes">
+                                        <code class="comments"><br>//As like before import the package</br></code>
+                                        <code>const mongoose = require('mongoose');</code>
+                                        <code class="comments"><br>//Create a schema to store posts</br></code>
+                                        <code >const PostSchema = mongoose.Schema({</code>
+                                        <code><br>      title:{</br></code>
+                                        <code>  type:String,</code>
+                                        <code ><br> required:true</br></code>
+                                        <code>},</code>
+                                        <code ><br>date:{</br></code>
+                                        <code>    type:Date,</code>
+                                        <code><br>    default:Date.now</br></code>
+                                        <code>}</code>
+                                        <code><br>});</br></code>
+                                        <code class="comments">//And finally export them</code>      
+                                        <code><br>module.exports = mongoose.model('Post', PostSchema);</br></code>   
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <div class="heading">
+                                <h3>Creating ROUTER & Routes</h3>
+                            </div>
+                            <div class="wrapper">
+                                <div class="lecture">
+                                    <p>Create a new file and name it as Router.js. A route has the ability to get, post, update, delete, etc data from the web. 
+                                        <div class="specific-content">
+                                            <h4>GET Route</h4>
+                                            <p class="abbrevation">Get route gets all the data in the database and it returns all the data with unique id by default.</p>
+                                        </div>
+                                        <div class="specific-content">
+                                            <h4>POST Route</h4>
+                                            <p class="abbrevation">A post route lets you to post the data to the database sheet with a unique id.</p>
+                                        </div>
+                                        <div class="specific-content">
+                                            <h4>DELETE Route</h4>
+                                            <p class="abbrevation">Delete route deletes the post only when we provide the id of the post.</p>
+                                        </div>
+                                        <div class="specific-content">
+                                            <h4>PATCH Route</h4>
+                                            <p class="abbrevation">Same as delete, patch also modifies the post only when the id of the post is given.</p>
+                                        </div>
+                                        <div>
+                                            <p>The Asynchronous (async) helps the program to respond to multiple requests, in order to wait for the same one.An async function can contain an await expression that pauses the execution of the async function to wait for the passed Promise's resolution, then resumes the async function's execution and evaluates as the resolved value.</p>
+                                        </div>
+                                        <div>
+                                            <h4>Status Codes</h4>
+                                            <p>
+                                                200 (OK). It indicates that the REST API successfully carried out whatever action the client requested and that no more error.
+                                            </p>
+                                            <p>
+                                                203 Non-Authoritative Information. The 204 status code is usually sent out in response to a PUT, POST, or DELETE request when the REST API declines to send back any status message or representation in the response message’s body.
+                                            </p>
+                                            <p>
+                                                The 301 status code indicates that the REST API’s resource model has been significantly redesigned, and a new permanent URI has been assigned to the client’s requested resource.
+                                            </p>
+                                            <p>
+                                                400 is the generic client-side error status, used when no other 4xx error code is appropriate. Errors can be like malformed request syntax, invalid request message parameters, or deceptive request routing etc.
+                                            </p>
+                                            <p>
+                                                A 401 error response indicates that the client tried to operate on a protected resource without providing the proper authorization. It may have provided the wrong credentials or none at all. 
+                                            </p>
+                                            <p>
+                                                A 403 error response indicates that the client’s request is formed correctly, but the REST API refuses to honor it, i.e., the user does not have the necessary permissions for the resource.
+                                            </p>
+                                        </div>
+                                    </p>
+                                    
+                                </div>
+                                <div class="code-variation">
+                                    <div class="codes">
+                                        <code><br>const express = require('express');</br></code>   
+                                        <code>const router = express.Router();</code>   
+                                        <code class="comments"><br>//Adding modelSchema to the routes file</br></code>   
+                                        <code>const Post = require('../models/Post');</code>   
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments">//Creating get route</code>
+                                        <code><br>router.get('/', async (req,res) => {</br></code>   
+                                        <code>    try{</code>   
+                                        <code><br>        const posts = await Post.find();</br></code>   
+                                        <code>        res.json(posts);</code>   
+                                        <code><br>    }catch(err){</br></code>
+                                        <code>        res.json({message: err})</code>
+                                        <code><br>    }</br></code>
+                                        <code>});</code>
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments">//Creating post route</code>
+                                        <code><br>router.post('/', async (req,res) => {</br></code>   
+                                        <code>const post = new Post({</code>   
+                                        <code><br>title: req.body.title,</br></code>   
+                                        <code>date: req.body.date</code>   
+                                        <code><br>});</br></code>   
+                                        <code> try{</code>   
+                                        <code><br>const savedPost = await post.save();</br></code>   
+                                        <code>res.json(savedPost);</code>   
+                                        <code><br>}catch(err){</br></code>
+                                        <code>res.json({message: err})</code>
+                                        <code><br>}</br></code>
+                                        <code>});</code>
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments">//Creating delete route</code>
+                                        <code><br>router.delete('/:postID', async (req,res) => {</br></code>   
+                                        <code>try{</code>   
+                                        <code><br>const removePost = await Post.remove({_id: req.params.postId});</br></code>   
+                                        <code>res.json(removePost);</code>   
+                                        <code><br>}catch(err){</br></code>
+                                        <code>res.json({message: err})</code>
+                                        <code><br>}</br></code>
+                                        <code>});</code>
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments">//Creating patch route</code>
+                                        <code><br>router.get('/:postId', async (req,res) => {</br></code>   
+                                        <code>    try{</code>   
+                                        <code><br>        const updatedPost = await Post.updateOne(</br></code>   
+                                        <code>        {_id: req.params.postId},</code>   
+                                        <code><br>        { $set: { title: req.body.title } }</br></code>   
+                                        <code>        )</code>   
+                                        <code><br>        res.json(updatedPost);</br></code>   
+                                        <code>    }catch(err){</code>
+                                        <code><br>        res.json({message: err})</br></code>
+                                        <code>    }</br></code>
+                                        <code>});</code>
+                                    </div>
+                                    <div class="codes">
+                                        <code class="comments">//After all export the routes to the server.js file</code>
+                                        <code><br>module.exports = router;</br></code>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <div class="post-credits">
+                                <p>Woohoo! you successfully learned to build your own REST API.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="endpage">
+                        <h4>&copy; WEBSITE CREATED BY CODIFIER</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

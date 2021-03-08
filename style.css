@@ -1,0 +1,195 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(to right ,rgb(180, 117, 238), rgb(70, 100, 231));
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page-header{
+    width: fit-content;
+    max-width: 100%;
+    height: max-content;
+    overflow-wrap: break-word;
+    margin-top: 0%;
+    font-size: 325%;
+    animation: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: rgba(245, 237, 237, 0.2);
+    text-align: center;
+    font-variant: small-caps;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes example {
+    0%{
+        color: rgba(247, 228, 228, 0.2);
+    }
+    25%{
+        color: rgba(196, 176, 176, 0.5);
+        /* color:rgba(29, 27, 27, 0.4);; */
+    }
+    50%{
+        color: rgba(199, 178, 178, 0.5);
+    }
+    100%{
+        color: rgba(240, 224, 224, 0.2);
+    }
+}
+.explanation{
+    overflow-wrap: break-word;
+    width: 75%;
+    margin: 0% 10% 0% 10%;
+    padding: 3% 3% 3% 3%;
+    font-size: larger;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 15% auto;
+    background-color: rgb(223, 228, 248);
+}
+.navbar{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    position: absolute;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 1.5rem;
+    margin-top: 10px;
+}
+.webname{
+    margin-right: 5%;
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+}
+.ques{
+    margin-left: 5%;
+    font-size: x-large;
+}
+
+.heading, .ques{
+    color: white;
+    font-size: x-large;
+    margin-left:5% ;    
+}
+
+.wrapper {
+    display: flex;
+    max-width: 90%;
+    height: fit-content;
+    justify-content: space-evenly;  
+}
+.content{
+    width: fit-content;
+    max-width: 60%;
+    height: fit-content;
+    padding: 2% 2% 2% 2%;
+    border-radius: 5px;
+    font-weight: 600;
+    overflow-wrap: break-word;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         
+}
+.example{
+    background-color: rgb(31, 31, 34);
+    color: aliceblue;
+    padding: 2% 2% 2% 2%;
+    font-family: sans-serif;
+    width:max-content;
+    height:max-content;
+    border-radius: 5px;
+}
+.example code{
+    text-align: center;
+    font-weight: 600;
+    font-size: larger;
+}
+pre{
+    text-align: center;
+}
+
+.codes{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    overflow-wrap: break-word;
+    font-size: medium;
+    padding: 2% 2% 2% 2%;
+    font-family: sans-serif;
+    width:500px ;
+    text-align: left;
+    height:max-content;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+.lecture{
+    width: 50%;
+    margin-left: 5%;
+    min-height: fit-content;
+    height: max-content;
+    font-weight: 600;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    border-radius: 5px ;
+    padding: 2% 2% 2% 2%;
+    color: black;
+}
+.inner-code{
+    width: 90%;
+    height: fit-content;
+    font-weight: 500;
+    background-color: black ;
+    color: white;
+    overflow-wrap: break-word;
+    border-radius: 3px;
+    padding: 2% 2% 2% 2%;
+    font-size: large;
+    margin-bottom: 10px;
+}
+.codes code{
+    font-size: x-large;
+}
+.comments{
+    color: rgb(68, 67, 67);
+}
+.abbrevation{
+    color: rgb(8, 9, 73);
+}
+.post-credits{
+    min-width: 80%;
+    margin-top: 20px;
+    text-align: center;
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 2% 2% 2% 2%;
+    margin-left: 9%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.endpage{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    padding: 5% 10% 5% 10%;
+}
+.specific-content{
+    background-color: rgb(159, 212, 154);
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+}
